@@ -46,5 +46,11 @@ tzdata==2026.5
 customtkinter==6.0.0
 darkdetect==0.8.0
 
+# Secure Vault Cryptography
+cryptography==50.0.2
+argon2-cffi==25.1.0
+argon2-cffi-bindings==26.1.0
+
 # Testing
 pytest==9.1.1
+
