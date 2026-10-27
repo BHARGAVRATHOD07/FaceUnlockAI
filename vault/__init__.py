@@ -21,6 +21,20 @@ from vault.vault_crypto import (
     RECOVERY_BYTES,
 )
 
+from vault.vault_manager import (
+    DocumentNotFoundError,
+    DuplicateDocumentError,
+    FileSizeLimitExceededError,
+    ManifestCorruptedError,
+    SecurityValidationError,
+    UnsupportedFormatError,
+    VaultDocumentMetadata,
+    VaultManager,
+    VaultManagerError,
+    inspect_file_type,
+    sanitize_filename,
+)
+
 __all__ = [
     "CryptoError",
     "InvalidKeyError",
@@ -38,5 +52,17 @@ __all__ = [
     "encrypt_data",
     "decrypt_data",
     "RECOVERY_BYTES",
+    "VaultManager",
+    "VaultDocumentMetadata",
+    "VaultManagerError",
+    "UnsupportedFormatError",
+    "SecurityValidationError",
+    "FileSizeLimitExceededError",
+    "DocumentNotFoundError",
+    "ManifestCorruptedError",
+    "DuplicateDocumentError",
+    "sanitize_filename",
+    "inspect_file_type",
 ]
+
 
