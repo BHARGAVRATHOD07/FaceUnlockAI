@@ -1,0 +1,56 @@
+# =====================================================================
+# FaceUnlockAI — Git Ignore Rules
+# =====================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# C extensions
+*.so
+
+# Virtual Environments (Local Python Installations)
+.venv/
+.venv*/
+venv/
+ENV/
+env/
+
+# Pytest / Test Artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Biometric Templates & Personal Facial Data (CRITICAL PRIVACY SAFEGUARD)
+# NEVER commit personal facial embeddings, raw images, or numpy templates
+data/registered_face/*.npz
+data/registered_face/*.npy
+data/registered_face/*.jpg
+data/registered_face/*.png
+!data/registered_face/.gitkeep
+
+# Security Event Logs & Diagnostics
+logs/*.log
+logs/*.jsonl
+!logs/.gitkeep
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# Windows OneDrive sync artifacts
+*.tmp

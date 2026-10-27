@@ -1,0 +1,50 @@
+# FaceUnlockAI - Phase 1 Requirements
+# Python 3.13.x (CPython, MSC build - NOT MSYS2/MINGW)
+# Verified on Python 3.13.7 (tags/v3.13.7) Windows 11 x64
+# Generated: 2026-10-27
+#
+# INSTALL ORDER NOTE:
+#   Install numpy first (before opencv), then opencv-python,
+#   then mediapipe (pulls opencv-contrib-python as its own dep).
+#   opencv-python + opencv-contrib-python coexist in OpenCV 5.0 design.
+#
+# WARNING: Do NOT install from MSYS2/MINGW pip (C:\msys64\...\python).
+#          Always use: .venv313\Scripts\python.exe -m pip install
+
+# Core numeric
+numpy==2.2.6
+
+# Computer vision (core - single cv2 binary)
+opencv-python==4.11.0.86
+
+# MediaPipe (brings opencv-contrib-python==5.0.0.93 as its dependency)
+mediapipe==1.0.1
+
+# Image processing
+Pillow==10.4.0
+
+# --- Transitive dependencies pinned for reproducibility ---
+absl-py==2.5.1
+certifi==2026.10.23
+cffi==2.1.1
+contourpy==1.4.0
+cycler==0.12.1
+flatbuffers==25.12.19
+fonttools==4.67.0
+kiwisolver==1.5.1
+matplotlib==3.11.2
+opencv-contrib-python==5.0.0.93
+packaging==26.3
+pycparser==3.12
+pyparsing==3.3.3
+python-dateutil==3.0.0
+six==1.17.0
+sounddevice==0.5.6
+tzdata==2026.5
+
+# Desktop GUI
+customtkinter==6.0.0
+darkdetect==0.8.0
+
+# Testing
+pytest==9.1.1

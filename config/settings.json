@@ -1,0 +1,14 @@
+{
+  "camera_index": 0,
+  "camera_width": 640,
+  "camera_height": 480,
+  "cosine_threshold": 0.38,
+  "ambiguity_margin": 0.035,
+  "liveness_enabled": true,
+  "num_liveness_challenges": 2,
+  "challenge_timeout_sec": 5.0,
+  "max_failed_attempts": 3,
+  "cooldown_duration_sec": 30.0,
+  "save_raw_images": false,
+  "ui_theme": "dark"
+}
